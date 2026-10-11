@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QChart>
+#include <QChartView>
+#include <QLineSeries>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,5 +22,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QLineSeries *series;
+    QChart *chart;
+    int tick = 0;
 };
 #endif // MAINWINDOW_H
